@@ -20,12 +20,12 @@ if (!$comment) $errors[count($errors)] = 'Please enter your comment.';
 if (!$errors) {
 
 	//recipient - replace your email here
-	$to = 'wowthemesnet@gmail.com';	
+	$to = 'nahikomakeup@gmail.com';
 	//sender - from the form
 	$from = $name . ' <' . $email . '>';
 	
 	//subject and the html message
-	$subject = 'Message via Beauttio from ' . $name;	
+	$subject = 'Mensaje desde LA RUBIA Y SUS LIOS para :' . $name;
 	$message = 'Name: ' . $name . '<br/><br/>
 		       Email: ' . $email . '<br/><br/>		
 		       Message: ' . nl2br($comment) . '<br/>';
@@ -35,8 +35,8 @@ if (!$errors) {
 	
 	//if POST was used, display the message straight away
 	if ($_POST) {
-		if ($result) echo 'Thank you! We have received your message.';
-		else echo 'Sorry, unexpected error. Please try again later';
+		if ($result) echo 'Gracias por contactarme, te escribire lo antes posible';
+		else echo 'Ha ocurrido un error, intentalo mas tarde';
 		
 	//else if GET was used, return the boolean value so that 
 	//ajax script can react accordingly
